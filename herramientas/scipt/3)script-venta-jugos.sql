@@ -1,3 +1,5 @@
+#para saber en que base de datos estamos usando
+select database();
 use venta_de_juegos;
 select * from jugos_ventas.tabla_de_productos;
 
@@ -12,4 +14,4 @@ SABOR, TAMANO, ENVASE, PRECIO_DE_LISTA as PRECIO_LISTA
 from jugos_ventas.tabla_de_productos
 where CODIGO_DEL_PRODUCTO not in (select CODIGO from tb_producto);
 
-select * from tb_producto;
+select * from tb_cliente;
