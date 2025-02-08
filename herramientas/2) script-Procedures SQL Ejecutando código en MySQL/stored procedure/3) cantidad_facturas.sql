@@ -1,0 +1,8 @@
+CREATE DEFINER=`root`@`localhost` PROCEDURE `cantidad_facturas`()
+BEGIN
+declare N_FACTURAS integer;
+#CON ESTE CODIGO NOS SIRVE PARA CONTAR LA CANTIDAD DE ELECMENTOS QUE TIENE UNA COLUMNA
+select count(*) into N_FACTURAS FROM facturas where 
+FECHA_VENTA = "2017/01/01";
+select N_FACTURAS;
+END
