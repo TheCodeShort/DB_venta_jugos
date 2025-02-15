@@ -1,0 +1,23 @@
+use empresa;
+
+select A.FECHA, sum(B.CANTIDAD*B.PRECIO) AS FACTURACION
+FROM facturas A
+inner join 
+items B
+on A.NUMERO = B.NUMERO
+WHERE A.FECHA = '20210619'
+GROUP BY A.FECHA;
+
+SELECT COUNT(*) FROM productos;
+
+CALL sp_venta('20210619', 100, 100);
+
+select * from facturas;
+select * from items;
+
+SELECT YEAR(FECHA), CEIL(SUM(IMPUESTO * (CANTIDAD * PRECIO))) 
+AS RESULTADO
+FROM facturas F
+INNER JOIN items I ON F.NUMERO = I.NUMERO
+WHERE YEAR(FECHA) = 2021
+GROUP BY YEAR(FECHA);
