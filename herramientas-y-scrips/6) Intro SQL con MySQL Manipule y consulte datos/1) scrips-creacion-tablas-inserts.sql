@@ -1,0 +1,32 @@
+create schema jugos ;
+use jugos ;
+
+
+CREATE TABLE tb_clientes(
+DNI VARCHAR(20),#varchar me ayuda a que si ponemos 50 caracteres y solo utilizaos 5 el resto no ocupa mas espacio 
+NOMBRE VARCHAR(150),
+DIRECCION1 VARCHAR(150),
+DIRECCION2 VARCHAR(150),
+BARRIO VARCHAR(50),
+CIUDAD VARCHAR(50),
+ESTADO VARCHAR(50),
+CP VARCHAR(10),
+EDAD SMALLINT,
+SEXO VARCHAR(1),
+LIMITE_CREDITO FLOAT,
+VOLUMEN_COMPRA FLOAT,
+PRIMERA_COMPRA BIT(1)); 
+
+#esta tabla se creo con el asistente pero tambien lo podemos hacer asi 
+CREATE TABLE tb_productos
+(PRODUCTO VARCHAR (20) ,
+NOMBRE VARCHAR (150) ,
+ENVASE VARCHAR (50) ,
+VOLUMEN VARCHAR (50) ,
+SABOR VARCHAR (50) ,
+PRECIO FLOAT);
+
+CREATE TABLE tb_vendedor
+(MATRICULA VARCHAR (5),
+NOMBRE VARCHAR (100),
+PORCENTAJE_COMISION FLOAT);
