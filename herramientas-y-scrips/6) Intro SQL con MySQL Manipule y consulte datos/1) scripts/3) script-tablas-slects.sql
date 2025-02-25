@@ -105,8 +105,14 @@ SELECT * FROM tb_cliente WHERE EDAD <> 26;# que sean mayor y menor pero no mostr
 
 SELECT * FROM tb_cliente WHERE  NOMBRE > 'Erica Carvajo';#muestra todos los que esten despues de la E y los que estan antes de la E no los mostrara
 
-SELECT * FROM tb_cliente WHERE  NOMBRE <= 'Erica Carvajo'
+SELECT * FROM tb_cliente WHERE  NOMBRE <= 'Erica Carvajo';
 
 SELECT * FROM tb_producto WHERE PRECIO_LISTA < 28.51;
 
+#BETWEEN nos ayuda a a buscar por un rango como se visualiza 
 SELECT * FROM tb_producto WHERE PRECIO_LISTA BETWEEN 28.49 AND 28.52;# ya que hay datos que no lo muestra por temas del mismo MySQL podemos hacerlo estableciendo un rango
+
+#filtro compuestos
+SELECT * FROM tbproducto WHERE ENVASE = 'Lata' OR ENVASE = 'Botella PET';
+
+SELECT * FROM TABLA_DE_VENDEDORES WHERE YEAR(FECHA_ADMISION) < 2016 AND DE_VACACIONES = 1;
