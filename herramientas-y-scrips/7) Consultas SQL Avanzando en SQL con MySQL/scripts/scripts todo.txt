@@ -77,6 +77,7 @@ SELECT * FROM tabla_de_productos WHERE SABOR LIKE '%manzana';
 
 SELECT * FROM tabla_de_productos WHERE SABOR LIKE '%manzana'
 AND ENVASE = 'Botella PET';
+----------------------------------------------------------------------------------------
 
 /* PROYECTO DEL AULA ANTERIOR 3 
 Los comandos vistos en el aula anterior fueron los siguientes:*/
