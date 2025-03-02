@@ -384,6 +384,7 @@ INNER JOIN
 vw_envases_grandes B
 ON A.ENVASE = B.ENVASE;
 
+------------------------------------------------------------------------------------------------------
 /* PROYECTO DEL AULA ANTERIOR 5 
 
 Los comandos vistos en el aula anterior fueron los siguientes:*/
