@@ -212,6 +212,8 @@ CASE
 END
 ORDER BY ENVASE;
 
+------------------------------------------------------------------------
+
 /* PROYECTO DEL AULA ANTERIOR 4 
 Los comandos vistos en el aula anterior fueron los siguientes:*/
 
